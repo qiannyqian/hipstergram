@@ -8,23 +8,23 @@ Things you may want to cover:
 * Ruby version - ruby 2.3.3p222
 
 * System dependencies -
-⋅⋅* RVM, NVM, Homebrew, Rails
-⋅⋅* NVM Install: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
-⋅⋅* NVM Install pt 2, 3: nvm install 7.2.0 // nvm alias default 7.2.0
-⋅⋅* RVM Install pt 1: gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-⋅⋅* RVM Install pt 2: \curl -sSL https://get.rvm.io | bash -s stable
-⋅⋅* Homebrew Install: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-⋅⋅* Update Homebrew: brew update
-⋅⋅* Install Rails: gem install rails --no-ri --no-rdoc
+1. RVM, NVM, Homebrew, Rails
+2. NVM Install: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
+3. NVM Install pt 2, 3: nvm install 7.2.0 // nvm alias default 7.2.0
+4. RVM Install pt 1: gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+5. RVM Install pt 2: \curl -sSL https://get.rvm.io | bash -s stable
+6. Homebrew Install: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+7. Update Homebrew: brew update
+8. Install Rails: gem install rails --no-ri --no-rdoc
 
 
 * Configuration -
-⋅⋅* brew install postgresql
-⋅⋅* brew services start postgresql
-⋅⋅* brew install redis
-⋅⋅* brew services start redis
-⋅⋅* brew install elasticsearch
-⋅⋅* brew services start elasticsearch
+1. brew install postgresql
+2. brew services start postgresql
+3. brew install redis
+4. brew services start redis
+5. brew install elasticsearch
+6. brew services start elasticsearch
 
 * Database creation - rails db:create (database = postgresql)
 
