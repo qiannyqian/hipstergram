@@ -1,0 +1,32 @@
+.landing {
+
+  .main-content {
+    background-image: asset-url("landing.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .main-title {
+    text-align: center;
+    font-size: 3em;
+    color: purple;
+    text-shadow: 1px 1px #000;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+      .button {
+        flex: 0 1 150px;
+      }
+  }
+
+
+}
