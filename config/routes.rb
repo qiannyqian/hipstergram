@@ -2,4 +2,5 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # route 'static_pages#landing'
   root to: 'static_pages#landing'
+  resources :users, except: [:destroy]
 end
