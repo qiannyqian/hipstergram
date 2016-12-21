@@ -1,0 +1,10 @@
+<html>
+  <body>
+    <section class="dashboard">
+      <div class="content">
+        <h1 class="text"><%= "Hello #{current_user.username}" %></h1>
+        <%= link_to "Logout", "/sessions", method: :delete %>
+      </div>
+    </section>
+  </body>
+</html>

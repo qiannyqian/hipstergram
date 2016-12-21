@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   # route 'static_pages#landing'
   root to: 'static_pages#landing'
   resources :users, except: [:destroy]
-  resources :sessions, only: [:create, :new, :destroy]
+  resource :sessions, only: [:create, :new, :destroy]
+  resources :dashboard, only: [:index]
 end

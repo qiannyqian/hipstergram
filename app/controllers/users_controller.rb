@@ -7,12 +7,14 @@ class UsersController < ApplicationController
     @user = User.create(user_params)
 
     if @user.persisted?
+      cookies.permanent.signed[:id] = @user.id
       flash[:success] = "You've registered"
       redirect_to root_path
     else
       flash[:danger] = @user.errors.full_messages
       redirect_to new_user_path
-    end    
+    end
+
   end
 
   private

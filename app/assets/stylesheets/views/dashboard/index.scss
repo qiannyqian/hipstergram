@@ -1,0 +1,17 @@
+.dashboard {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+
+  .content {
+    flex: 0 1 480px;
+    padding: 10px;
+  }
+
+  .text {
+    font-size: 3em;
+    // font-family: Montserrat;
+  }
+}
