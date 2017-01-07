@@ -1,9 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+My first rails app - a clone of Instagram!
 
 ### Ruby version
 1. ruby 2.3.3p222

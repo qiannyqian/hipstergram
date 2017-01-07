@@ -17,6 +17,23 @@ class PasswordResetsController < ApplicationController
     redirect_to new_password_reset_path
   end
 
+  def edit
+    @token = params[:id]
+  end
+
+  def update
+    @user = User.find_by(password_reset_token: params[:id])
+
+    if @user && token_active?
+      @user.update(password: user_params[:password], password_reset_token: nil, password_reset_at: nil)
+      flash[:success] = "Password updated, you may log in now"
+      redirect_to root_path
+    else
+      flash[:danger] = "Error, token is invalid or had expired"
+      redirect_to edit_password_reset_path(id: params[:id])
+    end
+  end
+
   private
 
   def reset_password_params
@@ -30,6 +47,12 @@ class PasswordResetsController < ApplicationController
   def password_reset_token
     SecureRandom.urlsafe_base64
   end
+
+  def token_active?
+    (Time.now - @user.password_reset_at) < 24.hours
+  end
+
+
 
 
 end
