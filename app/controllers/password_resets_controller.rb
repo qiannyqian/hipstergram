@@ -51,8 +51,4 @@ class PasswordResetsController < ApplicationController
   def token_active?
     (Time.now - @user.password_reset_at) < 24.hours
   end
-
-
-
-
 end
