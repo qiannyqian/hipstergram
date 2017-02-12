@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   resource :sessions, only: [:create, :new, :destroy]
   resources :dashboard, only: [:index]
   resources :password_resets, only: [:new, :create, :edit, :update]
+  resources :posts, only: [:new, :show]
 end
