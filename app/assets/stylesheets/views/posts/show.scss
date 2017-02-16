@@ -1,12 +1,15 @@
-.posts.new {
+.post {
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
 
   .content {
-    flex: 0 1 480px;
+    flex: 0 1 600px;
     padding: 10px;
+  }
+
+  .caption-container {
+    margin: 15px 0;
   }
 }

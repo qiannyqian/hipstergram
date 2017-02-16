@@ -2,6 +2,7 @@ class DashboardController < ApplicationController
   before_action :authenticate!
 
   def index
-    @hello_message = "Hello from Hipstergram"
+    @hello_message = "Hipstergram welcomes you!"
+    @posts = current_user.posts
   end
 end
